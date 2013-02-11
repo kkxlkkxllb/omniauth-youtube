@@ -34,7 +34,8 @@ module OmniAuth
           'published' => user['published']['$t'],
           'total_views' => user['yt$statistics']['totalUploadViews'],
           'total_channel_views' => user['yt$statistics']['viewCount'],
-          'birth_date' => birth_day
+          'birth_date' => birth_day,
+          'channel_url' => user['link'][0]['href']
         }
       end
 
